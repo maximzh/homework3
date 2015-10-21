@@ -11,8 +11,8 @@ use Price\PriceInterface;
 
 class Book extends AbstractProduct implements PriceInterface
 {
-    private $isbn;
-    private $author;
+    protected $isbn;
+    protected $author;
 
     public function setPrice($price)
     {
