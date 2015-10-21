@@ -11,9 +11,9 @@ use Price\PriceInterface;
 
 class Apparel extends AbstractProduct implements PriceInterface
 {
-    protected $size;
-    protected $color;
-    protected $material;
+    private $size;
+    private $color;
+    private $material;
 
     public function setPrice($price)
     {
