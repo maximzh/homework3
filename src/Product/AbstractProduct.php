@@ -38,7 +38,6 @@ abstract class AbstractProduct
 
     public function iterateObject()
     {
-
         foreach ($this as $key => $value) {
             print "$key => $value<br />\n";
         }

@@ -34,7 +34,7 @@ class Book extends AbstractProduct implements PriceInterface
         $pr = $this->price;
 
         if ($this->discount) {
-            $pr = $pr - ($this->discount)*$pr/100;
+            $pr = $pr - ($this->discount) * $pr / 100;
         }
 
         return $pr;
@@ -58,5 +58,11 @@ class Book extends AbstractProduct implements PriceInterface
     public function getAuthor()
     {
         return $this->author;
+    }
+
+    public function iterateObject()
+    {
+        echo "This is the instance of " . __CLASS__ . " <br />";
+        parent::iterateObject();
     }
 }

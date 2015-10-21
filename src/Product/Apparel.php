@@ -70,4 +70,10 @@ class Apparel extends AbstractProduct implements PriceInterface
     {
         return $this->material;
     }
+
+    public function iterateObject()
+    {
+        echo "This is the instance of ". __CLASS__." <br />";
+        parent::iterateObject();
+    }
 }
