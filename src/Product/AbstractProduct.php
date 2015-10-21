@@ -35,4 +35,11 @@ abstract class AbstractProduct
     {
         $this->producerCompany = $company;
     }
+
+    public function iterateObject() {
+
+        foreach($this as $key => $value) {
+            print "$key => $value<br />\n";
+        }
+    }
 }
