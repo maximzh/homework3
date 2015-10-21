@@ -13,5 +13,7 @@ interface PriceInterface
 
     public function setPrice($price);
 
+    public function getDiscount();
+
     public function setDiscount($discount);
 }
