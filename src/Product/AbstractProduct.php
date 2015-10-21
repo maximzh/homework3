@@ -16,11 +16,23 @@ abstract class AbstractProduct
     protected $productName;
     protected $producerCompany;
 
-    abstract public function getProductName();
+    public function getProductName()
+    {
+        return $this->productName;
+    }
 
-    abstract public function setProductName($name);
+    public function setProductName($name)
+    {
+        $this->productName = $name;
+    }
 
-    abstract public function getProducerCompany();
+    public function getProducerCompany()
+    {
+        return $this->producerCompany;
+    }
 
-    abstract public function setProducerCompany($company);
+    public function setProducerCompany($company)
+    {
+        $this->producerCompany = $company;
+    }
 }
