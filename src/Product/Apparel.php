@@ -36,6 +36,11 @@ class Apparel extends AbstractProduct implements PriceInterface
         $this->discount = $discount;
     }
 
+    public function getDiscount()
+    {
+        return $this->discount;
+    }
+
     public function getSize()
     {
         return $this->size;
