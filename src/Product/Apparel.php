@@ -45,4 +45,24 @@ class Apparel extends AbstractProduct implements PriceInterface
     {
         $this->size = $size;
     }
+
+    public function setColor($color)
+    {
+        $this->color = $color;
+    }
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    public function setMaterial($material)
+    {
+        $this->material = $material;
+    }
+
+    public function getMaterial()
+    {
+        return $this->material;
+    }
 }
