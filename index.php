@@ -10,7 +10,7 @@ $pant->setProductName('Pant');
 $pant->setProducerCompany('Nike');
 $pant->setPrice(65);
 // Set discount in dollars
-$pant->setDiscount(15);
+$pant->setDiscount('10');
 $pant->setColor('blue');
 $pant->setSize('M');
 $pant->setMaterial('Cotton');
@@ -27,6 +27,6 @@ $book->setIsbn('5-94387-232-9');
 $book->setPrice(12);
 // Set discount in percents
 $book->setDiscount(5);
-
+$var = $book->getDiscount();
 $book->iterateObject();
 echo 'Price with discount: ' . $book->getPrice() . '<br />';
